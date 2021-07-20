@@ -31,15 +31,16 @@
             <input type="text" name="searchTerm" id="searchTerm" />
         </p>
 
-        <input type="submit" value="Search"  />
+        <input type="submit" value="Search">
     </form>
 
     <hr />
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
-<table class = "job-listing" th:each = "job : ${searchResultJobs}">
+<table class = "job-listing" th:each = "job : ${jobSearch}">
 <div th:replace = "fragments :: field-values"></div>
 </table>
+
 </div>
 
 </body>
